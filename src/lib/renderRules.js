@@ -297,7 +297,7 @@ const renderRules = (Text) => ({
     </Text>
   ),
   textgroup: (node, children, parent, styles) => (
-    <Text key={node.key} style={styles.textgroup}>
+    <Text key={node.key} style={styles.textgroup}  numberOfLines={styles.hr.numberOfLines}> 
       {children}
     </Text>
   ),
